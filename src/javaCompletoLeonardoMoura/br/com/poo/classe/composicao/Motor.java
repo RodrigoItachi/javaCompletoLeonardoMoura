@@ -12,4 +12,9 @@ public class Motor {
 			return 0;
 		}
 	}
+	
+	@Override
+	public String toString() {
+		return giros()+" RPM";
+	}
 }

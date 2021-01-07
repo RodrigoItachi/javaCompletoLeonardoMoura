@@ -1,4 +1,4 @@
-package javaCompletoLeonardoMoura.br.com.poo.classe.composicao;
+package javaCompletoLeonardoMoura.br.com.poo.classe.composicao.onetoone;
 
 public class Carro {
 	Motor motor = new Motor();

@@ -16,12 +16,17 @@ public class CarroTeste {
 		carro.acelerar();
 		carro.acelerar();
 		carro.acelerar();
+		carro.acelerar();
+		carro.acelerar();
 		
 		System.out.println(carro.motor);
 
 		carro.frear();
+		carro.frear();		
 		carro.frear();
+		carro.frear();		
 		carro.frear();
+		carro.frear();		
 		carro.frear();		
 		
 		System.out.println(carro.motor);

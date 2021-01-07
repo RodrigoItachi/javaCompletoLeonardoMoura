@@ -8,6 +8,16 @@ public class CarroTeste {
 		System.out.println(carro.estaLigado());
 		carro.motorLigado();
 		System.out.println(carro.estaLigado());
+
+//		System.out.println(carro.motor.giros());
+		System.out.println(carro.motor);// o gito vai ser mostrado pelo toString implicito
+		
+		carro.acelerar();
+		carro.acelerar();
+		carro.acelerar();
+		carro.acelerar();
+		
+		System.out.println(carro.motor);
 	}
 
 }

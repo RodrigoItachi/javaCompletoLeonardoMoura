@@ -8,8 +8,9 @@ public class Item {
 
 	}
 
-	public Item(Integer quantidade, Produto produto) {
+	public Item(Integer quantidade) {
 		this.quantidade = quantidade;
-		this.produto = produto;
+		this.produto = new Produto();
 	}
+
 }

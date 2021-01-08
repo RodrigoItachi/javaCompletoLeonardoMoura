@@ -8,4 +8,8 @@ public class Compra {
 	public Compra() {
 	}
 	
+	void addItem(Produto produto, Integer quantidade) {
+		this.items.add(new Item(produto, quantidade));
+	}
+	
 }

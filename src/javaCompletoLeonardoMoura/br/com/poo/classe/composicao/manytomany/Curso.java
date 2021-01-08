@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Curso {
 	final String nome;
-	ArrayList<Aluno> alunos = new ArrayList<>();
+	final ArrayList<Aluno> alunos = new ArrayList<>();
 
 	public Curso(String nome) {
 		this.nome = nome;

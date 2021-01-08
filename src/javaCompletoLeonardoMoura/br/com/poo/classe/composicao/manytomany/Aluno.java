@@ -3,8 +3,12 @@ package javaCompletoLeonardoMoura.br.com.poo.classe.composicao.manytomany;
 import java.util.ArrayList;
 
 public class Aluno {
-	String nome;
+	final String nome;
 	ArrayList<Curso> cursos = new ArrayList<>();
+
+	public Aluno(String nome) {
+		this.nome = nome;
+	}
 
 	void addCurso(Curso curso) {
 		this.cursos.add(curso);

@@ -1,16 +1,13 @@
 package javaCompletoLeonardoMoura.br.com.poo.classe.composicao.desafio;
 
 public class Item {
-	Integer quantidade;
+
 	Produto produto;
+	Integer quantidade;
 
-	public Item() {
-
-	}
-
-	public Item(Integer quantidade) {
+	public Item(Produto produto, Integer quantidade) {
+		this.produto = produto;
 		this.quantidade = quantidade;
-		this.produto = new Produto();
 	}
 
 }

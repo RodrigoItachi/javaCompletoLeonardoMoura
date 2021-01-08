@@ -5,12 +5,15 @@ import java.util.ArrayList;
 public class Cliente {
 	String nome;
 	final ArrayList<Compra> compras = new ArrayList<>();
-	
+
 	public Cliente() {
 	}
 
 	public Cliente(String nome) {
 		this.nome = nome;
 	}
-	
+
+	Double obterValorTotal() {
+		return 0.0;
+	}
 }

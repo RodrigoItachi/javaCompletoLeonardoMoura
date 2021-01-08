@@ -7,4 +7,5 @@ public class Compra {
 
 	public Compra() {
 	}
+	
 }

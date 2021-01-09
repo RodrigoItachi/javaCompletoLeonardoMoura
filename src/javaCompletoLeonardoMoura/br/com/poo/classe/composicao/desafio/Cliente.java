@@ -13,7 +13,13 @@ public class Cliente {
 		this.nome = nome;
 	}
 
-	Double obterValorTotal() {
-		return 0.0;
+	Double obterValorTotalCompras() {
+		Double total = 0.0;
+
+		for (Compra compra : compras) {
+			total += compra.obterValorTotal();
+		}
+
+		return total;
 	}
 }

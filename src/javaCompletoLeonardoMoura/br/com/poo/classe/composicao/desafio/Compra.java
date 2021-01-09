@@ -12,6 +12,13 @@ public class Compra {
 		this.items.add(new Item(produto, quantidade));
 	}
 	
+	void addItem(String nome, Double preco, Integer quantidade) {
+		this.items.add(
+				new Item(
+						new Produto(nome, preco), quantidade)
+				);
+	}
+	
 	Double obterValorTotal() {
 		Double total = 0.0; 
 		for (Item item : items) {

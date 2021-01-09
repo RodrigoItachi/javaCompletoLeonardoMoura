@@ -12,4 +12,12 @@ public class Compra {
 		this.items.add(new Item(produto, quantidade));
 	}
 	
+	Double obterValorTotal() {
+		Double total = 0.0; 
+		for (Item item : items) {
+			total += item.quantidade * item.produto.preco;
+		}
+		return total;
+	}
+	
 }

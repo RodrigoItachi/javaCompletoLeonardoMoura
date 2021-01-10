@@ -1,4 +1,4 @@
-package javaCompletoLeonardoMoura.br.com.poo.classe.composicao.desafio;
+package javaCompletoLeonardoMoura.br.com.poo.classe.composicao.desafio.um;
 
 public class ClienteTeste {
 

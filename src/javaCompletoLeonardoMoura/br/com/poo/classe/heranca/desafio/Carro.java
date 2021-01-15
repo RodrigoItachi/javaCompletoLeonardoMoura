@@ -11,9 +11,7 @@ public class Carro {
 	}
 
 	public int acelerar() {
-		if (this.velocidadeAtual >= 0 && this.velocidadeAtual <= 345) {
-
-		}
+		
 		return this.velocidadeAtual += 5;
 	}
 

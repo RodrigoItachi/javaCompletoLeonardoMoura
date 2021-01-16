@@ -1,23 +1,25 @@
 package javaCompletoLeonardoMoura.br.com.poo.classe.heranca.desafio;
 
 public class Carro {
-	int velocidadeAtual;
+	protected final int VELOCIDADE_MAXIMA;
+	protected int aceleracao = 5;
+	protected int velocidadeAtual;
 
-	public Carro() {
-	}
-
-	public Carro(int velocidadeAtual) {
-		this.velocidadeAtual = velocidadeAtual;
+	public Carro(int velocidadeMaxima) {
+		this.VELOCIDADE_MAXIMA = velocidadeMaxima;
 	}
 
 	public int acelerar() {
-		
-		return this.velocidadeAtual += 5;
+		if (velocidadeAtual + aceleracao > VELOCIDADE_MAXIMA) {
+			return velocidadeAtual = VELOCIDADE_MAXIMA;
+		} else {
+			return this.velocidadeAtual += aceleracao;
+		}
 	}
 
 	public int frear() {
-		if (this.velocidadeAtual >= 0) {
-			return this.velocidadeAtual -= 5;
+		if (this.velocidadeAtual >= aceleracao) {
+			return this.velocidadeAtual -= aceleracao;
 		} else {
 			return 0;
 		}

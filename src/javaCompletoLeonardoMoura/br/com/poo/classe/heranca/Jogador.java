@@ -1,11 +1,13 @@
 package javaCompletoLeonardoMoura.br.com.poo.classe.heranca;
 
 public class Jogador {
-	int vida = 100;
-	int x;
-	int y;
+	
+	@SuppressWarnings("unused")
+	private int vida = 100;
+	public int x;
+	public int y;
 
-	boolean andar(Direcao direcao) {
+	public boolean andar(Direcao direcao) {
 		switch (direcao) {
 		case NORTE:
 			y--;
@@ -23,7 +25,7 @@ public class Jogador {
 		return true;
 	}
 
-	boolean atacar(Jogador oponente) {
+	public boolean atacar(Jogador oponente) {
 
 		int posicaoX = Math.abs(x - oponente.x);
 		int posicaoY = Math.abs(y - oponente.y);
@@ -37,6 +39,9 @@ public class Jogador {
 		} else {
 			return false;
 		}
-
+	}
+	
+	public int mostraVida() {
+		return this.vida;
 	}
 }
